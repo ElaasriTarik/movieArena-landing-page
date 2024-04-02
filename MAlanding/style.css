@@ -1,0 +1,324 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: monospace;
+	z-index: 1;
+}
+
+body {
+	background-color: #181818;
+
+}
+
+h1,
+h2,
+h3,
+p {
+	max-width: fit-content;
+}
+
+.cover {
+	width: 100vw;
+	height: 100%;
+	background: url('images/dims.apnews.webp') repeat center center/cover;
+	filter: blur(2px) grayscale(0.7);
+	z-index: 0;
+	position: absolute;
+	top: 0;
+}
+
+.bgcover {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	z-index: 0;
+	margin-top: 4rem;
+}
+
+.bg {
+	width: 100%;
+	height: 100%;
+}
+
+header .navbar {
+	width: 100vw;
+	height: 4rem;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1rem;
+	position: relative;
+	z-index: 2;
+}
+
+header .navbar .logo {
+	width: 3rem;
+	height: 3rem;
+}
+
+
+
+header ul {
+	display: flex;
+	gap: .3rem;
+	align-items: center;
+	flex-direction: row;
+}
+
+.navLinks,
+.signInOp {
+	display: flex;
+	gap: .2rem;
+	align-items: flex-end;
+}
+
+.signInOp img {
+	border-radius: 50%;
+	align-items: center;
+}
+
+header ul li {
+	list-style: none;
+}
+
+header ul li a {
+	color: white;
+	font-size: 1.2rem;
+	cursor: pointer;
+	text-align: center;
+}
+
+.icon {
+	width: 1.7rem;
+	height: auto;
+	cursor: pointer;
+	position: relative;
+	bottom: 0;
+}
+
+.login {
+	color: thistle;
+	font-weight: 800;
+	font-size: 1.2rem;
+}
+
+.content {
+	background-color: #242424;
+	min-width: 45%;
+	max-width: 85%;
+	height: auto;
+	position: relative;
+	margin: auto;
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	box-shadow: 5px 10px 50px 1px #242424;
+	filter: opacity(95%);
+}
+
+.samples {
+	max-width: 57rem;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: rem;
+	overflow: hidden;
+	background-color: #31363f;
+	padding: 1rem 0;
+	border-radius: 3px;
+}
+
+.sample {
+	width: 100%;
+	height: 12rem;
+	overflow: hidden;
+}
+
+.sample img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.sample2 img {
+	margin-right: 5rem;
+	object-fit: contain;
+}
+
+.content h1 {
+	color: #eee;
+	font-size: 2rem;
+	font-weight: 900;
+
+}
+
+.content p {
+	color: #eee;
+	font-size: 1.2rem;
+	border-bottom: 1px solid #eee;
+	padding-bottom: .5rem;
+}
+
+.btn {
+	padding: .6rem 1.5rem;
+	font-size: 1.2rem;
+	background-color: #eae9e9;
+	border-radius: 2px;
+	color: black;
+}
+
+.features,
+.aboutSection {
+	background-color: #242424;
+	min-width: 45%;
+	max-width: 85%;
+	height: auto;
+	position: relative;
+	margin: auto;
+	margin-top: auto;
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	box-shadow: 5px 10px 50px 1px #242424;
+	filter: opacity(95%);
+	margin: auto;
+	margin: 2rem auto;
+}
+
+.feature {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	color: #eee;
+}
+
+.features h1 {
+	color: #eee;
+	font-size: 2.5rem;
+	font-weight: 900;
+
+}
+
+.featureText {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	color: #eee;
+
+}
+
+.featureText h3 {
+	color: #eee;
+	font-size: 1.5rem;
+	font-weight: 900;
+	text-align: center;
+}
+
+.featureText p {
+	color: #eee;
+	font-size: 1.2rem;
+}
+
+.feature img {
+	max-width: 35rem;
+	height: auto;
+}
+
+.titleBox {
+	max-width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .5rem;
+}
+
+.titleBox img {
+	max-width: 1.5rem;
+	height: auto;
+}
+
+.aboutSection h1 {
+	color: #eee;
+	font-size: 3rem;
+	font-weight: 900;
+	margin-bottom: 2rem;
+}
+
+.aboutSection {
+	align-items: flex-start;
+	position: relative;
+}
+
+.aboutSection ol,
+ul {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 1rem;
+	color: #eee;
+}
+
+.aboutSection p {
+	color: #ccc6c6;
+	font-size: 1.6rem;
+	font-weight: 800;
+	float: left;
+	margin-bottom: .5rem;
+}
+
+.aboutSection ol li,
+.aboutSection ul li {
+	color: #eee;
+	font-size: 1.3rem;
+	margin-left: 4rem;
+}
+
+.aboutSection ol li a,
+ul li a {
+	color: #eee;
+	font-size: 1.3rem;
+}
+
+a:hover {
+	color: aqua;
+}
+
+.inspiration {
+	max-width: 50rem;
+	height: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-size-adjust: 100%;
+	font-size: 1.4rem;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.headers {
+	border-bottom: 2px solid #eee;
+}
